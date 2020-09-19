@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:todo/screens/add_task_screen.dart';
 import 'package:todo/widgets/task_list.dart';
 
 class TaskScreen extends StatelessWidget {
-  Widget buildBottomSheet(BuildContext context) {
-    return Container(
-      color: Colors.green[100],
-    );
-  }
+  // Widget buildBottomSheet(BuildContext context) => Container(
+  //     color: Colors.green[100],
+  //   );
 
   @override
   Widget build(BuildContext context) {
@@ -65,7 +64,8 @@ class TaskScreen extends StatelessWidget {
           backgroundColor: Colors.greenAccent[700],
           hoverColor: Colors.green[700],
           onPressed: () {
-            showModalBottomSheet(context: context, builder: buildBottomSheet);
+            showModalBottomSheet(
+                context: context, builder: (context) => AddTaskScreen());
           },
           label: Icon(
             Icons.add_circle,
