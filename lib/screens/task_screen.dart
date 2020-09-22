@@ -37,7 +37,7 @@ class _TaskScreenState extends State<TaskScreen> {
                     // ],
                   ),
                   child: Icon(
-                    Icons.list_alt_outlined,
+                    Icons.list,
                     size: 40,
                     color: Colors.lightGreen,
                   ),
@@ -89,6 +89,7 @@ class _TaskScreenState extends State<TaskScreen> {
             hoverColor: Colors.green[700],
             onPressed: () {
               showModalBottomSheet(
+                // isScrollControlled: true,
                 context: context,
                 builder: (context) => AddTaskScreen(),
               );
