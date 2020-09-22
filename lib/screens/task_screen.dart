@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:todo/models/task.dart';
 import 'package:todo/models/task_data.dart';
 import 'package:todo/screens/add_task_screen.dart';
 import 'package:todo/widgets/task_list.dart';
@@ -29,15 +28,9 @@ class _TaskScreenState extends State<TaskScreen> {
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(50),
-                    // boxShadow: [
-                    //   BoxShadow(
-                    //       color: Colors.blueGrey[700],
-                    //       blurRadius: 10,
-                    //       offset: Offset(3, 4))
-                    // ],
                   ),
                   child: Icon(
-                    Icons.list,
+                    Icons.list_alt_outlined,
                     size: 40,
                     color: Colors.lightGreen,
                   ),
